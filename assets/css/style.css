@@ -66,7 +66,7 @@ nav {
   top: 100%;
 }
 /* Nav toggle */
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 #nav-toggle {
@@ -92,23 +92,33 @@ footer {
 }
 
 /* Media Query: tablets and larger (768 px and up)*/
-@media screen and (min-width:768px) {
-/* Header */
-nav {
-  display: block;
-  position: relative;
-  box-shadow: none;
-  width: fit-content;
-  padding-right: 1rem;
+@media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+  #menu {
+    display: flex;
+  }
+
+  #menu > li {
+    padding-left: 1rem;
+  }
+  .nav-toggle-label {
+    display: none;
+  }
+    #logo {
+      font-size: 280%;
+      line-height: 75px;
+      margin: 0 0.5rem;
+    }
+    /* Main content*/
+    main {
+      margin-top: 79px;
+    }
+  
 }
- #menu {
-  display: flex;
- }
-
- #menu >li {
-  padding-left: 1rem;
- }
-
-
-}  
-
